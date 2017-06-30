@@ -1,0 +1,63 @@
+{ // luojf945
+  "name": "react-native-jiguang-message",
+  "version": "0.2.2",
+  "author": "https://github.com/luojf945",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luojf945/react-native-jiguang-message/issues"
+  },
+  "homepage": "https://github.com/luojf945/react-native-jiguang-message",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luojf945/react-native-jiguang-message"
+  },
+  "keywords": [
+    "jiguang",
+    "jmessage",
+    "jiguang-message",
+    "react",
+    "react-native",
+    "react-component"
+  ],
+  "description": "React Native Module for JMessage, Original Author is xsdlr",
+  "main": "index.js",
+  "dependencies": {
+    "base-64": "^0.1.0",
+    "camelcase-keys": "^4.0.0",
+    "inquirer": "^3.0.1",
+    "lodash": "^4.17.4",
+    "path": "^0.12.7",
+    "plist": "git+https://github.com/akofman/plist.js.git",
+    "promise": "^7.1.1",
+    "xcode": "^0.9.1"
+  },
+  "devDependencies": {
+    "react": "^15.3.2",
+    "react-native": "^0.37.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "rnpm": {
+    "android": {
+      "packageInstance": "new JMessagePackage(BuildConfig.DEBUG)"
+    },
+    "ios": {
+      "sharedLibraries": [
+        "libsqlite3",
+        "libresolv",
+        "UIKit",
+        "Foundation",
+        "SystemConfiguration",
+        "CoreFoundation",
+        "CFNetwork",
+        "Security",
+        "CoreTelephony",
+        "libz"
+      ]
+    },
+    "commands": {
+      "postlink": "node node_modules/react-native-jiguang-message/scripts/postlink/run"
+    }
+  }
+}
