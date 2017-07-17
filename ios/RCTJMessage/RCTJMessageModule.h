@@ -49,6 +49,8 @@ typedef NS_ENUM(NSInteger, JMSGRNErrorCode) {
 @property NSString* appKey;
 @property NSString* appChannel;
 @property NSString* masterSecret;
+@property NSString* sessionId;
+
 
 + (void)setupJMessage:(NSDictionary *)launchOptions
      apsForProduction:(BOOL)isProduction
